@@ -6,28 +6,22 @@
 
 <body>
 
-<header><h1>Certification Program</h1></header>
+<nav>...same nav...</nav>
+
+<header><h1>Certification</h1></header>
 
 <div class="container">
 
 <div class="card">
-  <h2>Enter Name</h2>
-  <input id="name">
-  <button onclick="certify()">Generate Certificate</button>
+  <input id="name" placeholder="Name">
+  <button onclick="document.getElementById('out').innerText =
+  document.getElementById('name').value + ' is certified in system awareness.'">
+    Generate
+  </button>
 
-  <p id="output"></p>
+  <p id="out"></p>
 </div>
 
 </div>
-
-<script>
-function certify(){
-  const name = document.getElementById("name").value;
-
-  document.getElementById("output").innerHTML =
-  name + " is now certified in Redirecting Responsibilities to Jared.";
-}
-</script>
-
 </body>
 </html>

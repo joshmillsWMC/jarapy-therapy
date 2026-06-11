@@ -1,46 +1,44 @@
 :root{
-  --bg:#0f1720;
-  --panel:#16212e;
-  --card:#1e2b3a;
-  --text:#e6edf3;
-  --muted:#9fb0c3;
-  --accent:#4fd1c5;
-  --warning:#ffb020;
-  --danger:#ff5c5c;
+  --bg:#f6f3ee;
+  --card:#ffffff;
+  --text:#2f2f2f;
+  --muted:#6b7280;
+  --accent:#5f7a6a;
+  --accent2:#c8a96b;
+  --line:#e7e1d8;
 }
 
 body{
   margin:0;
-  font-family:system-ui;
+  font-family:system-ui, -apple-system, Segoe UI, sans-serif;
   background:var(--bg);
   color:var(--text);
 }
 
 header{
-  background:linear-gradient(135deg,#1b2a3a,#0f1720);
-  padding:40px;
+  background:linear-gradient(135deg,#5f7a6a,#3f5a4d);
+  color:white;
+  padding:50px 20px;
   text-align:center;
-  border-bottom:1px solid #223244;
 }
 
 nav{
   display:flex;
+  flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
+  gap:14px;
   padding:12px;
-  background:#0c131b;
-  position:sticky;
-  top:0;
+  background:#2f2f2f;
 }
 
 nav a{
-  color:var(--muted);
+  color:#ddd;
   text-decoration:none;
-  font-weight:500;
+  font-size:14px;
 }
 
 nav a:hover{
-  color:var(--accent);
+  color:var(--accent2);
 }
 
 .container{
@@ -51,57 +49,48 @@ nav a:hover{
 
 .card{
   background:var(--card);
-  padding:20px;
-  margin:15px 0;
+  border:1px solid var(--line);
   border-radius:14px;
-  border:1px solid #233244;
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-3px);
-  border-color:var(--accent);
+  padding:20px;
+  margin:16px 0;
+  box-shadow:0 4px 14px rgba(0,0,0,0.04);
 }
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
 }
 
 .badge{
   display:inline-block;
+  font-size:12px;
   padding:4px 10px;
   border-radius:999px;
-  font-size:12px;
-  background:#223244;
-  color:var(--muted);
+  background:#eef2ee;
+  color:var(--accent);
 }
 
 .metric{
   font-size:28px;
-  font-weight:bold;
+  font-weight:600;
   color:var(--accent);
 }
 
 button{
   background:var(--accent);
+  color:white;
   border:none;
   padding:10px 14px;
   border-radius:10px;
   cursor:pointer;
-  font-weight:600;
 }
 
 button:hover{
-  filter:brightness(1.1);
+  background:#4e6a5c;
 }
 
-.fox{
-  position:fixed;
-  opacity:.05;
-  font-size:30px;
+.small{
+  color:var(--muted);
+  font-size:14px;
 }
-
-.f1{top:20%;left:5%;}
-.f2{bottom:10%;right:8%;}

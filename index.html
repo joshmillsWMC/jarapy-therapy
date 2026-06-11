@@ -2,60 +2,67 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/styles.css">
-<script defer src="js/app.js"></script>
 </head>
 
 <body>
 
-<div class="fox f1">🦊</div>
-<div class="fox f2">🦊</div>
-
 <header>
-  <h1>Jarapy Therapy Enterprise</h1>
-  <p>Workplace Emotional Load Balancing Platform</p>
+  <h1>Jarapy Therapy</h1>
+  <p>Workplace Emotional Infrastructure Platform</p>
 </header>
 
+<!-- NAV -->
 <nav>
-  <a href="index.html">Dashboard</a>
-  <a href="hotline.html">Escalation Portal</a>
-  <a href="dashboard.html">System Metrics</a>
-  <a href="hall.html">Compliance History</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="hotline.html">Hotline</a>
+  <a href="patients.html">Patients</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="hall.html">History</a>
+  <a href="faq.html">FAQ</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="certification.html">Certification</a>
 </nav>
 
 <div class="container">
 
-  <div class="grid">
+<div class="card">
+  <span class="badge">SYSTEM STATUS</span>
+  <h2>Jared Availability</h2>
+  <div class="metric">0%</div>
+  <p class="small">All incoming concerns are currently routed to active processing queues.</p>
+</div>
 
-    <div class="card">
-      <div class="badge">SYSTEM STATUS</div>
-      <h2>Jared Availability</h2>
-      <div class="metric">0%</div>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <div class="badge">LIVE OPERATIONS</div>
-      <h2>Active Tickets</h2>
-      <div class="metric" id="counter">312,451</div>
-    </div>
-
-    <div class="card">
-      <div class="badge">STABILITY INDEX</div>
-      <h2>Stress Level</h2>
-      <div class="metric" id="stressText">Loading...</div>
-    </div>
-
+  <div class="card">
+    <span class="badge">LIVE LOAD</span>
+    <h3>Active Requests</h3>
+    <div class="metric">312,451</div>
   </div>
 
   <div class="card">
-    <h2>System Activity Feed</h2>
-    <p id="log">Initializing Jarapy Network...</p>
+    <span class="badge">STABILITY</span>
+    <h3>System State</h3>
+    <div class="metric">Stable</div>
   </div>
 
   <div class="card">
-    <button onclick="submitTicket()">Create New Escalation</button>
+    <span class="badge">PROCESSING</span>
+    <h3>Queue Status</h3>
+    <div class="metric">Continuous</div>
   </div>
 
 </div>
 
+<div class="card">
+  <h2>System Overview</h2>
+  <p class="small">
+    Jarapy Therapy is a calm-response workplace support system designed
+    to convert incoming organizational stress into structured responsibility distribution.
+  </p>
+</div>
+
+</div>
 </body>
 </html>
