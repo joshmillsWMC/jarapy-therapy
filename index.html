@@ -11,40 +11,49 @@
 <div class="fox f2">🦊</div>
 
 <header>
-  <h1>Jarapy Therapy</h1>
-  <p>Executive-Level Workplace Burden Redistribution</p>
+  <h1>Jarapy Therapy Enterprise</h1>
+  <p>Workplace Emotional Load Balancing Platform</p>
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="hotline.html">Hotline</a>
-  <a href="patients.html">Patients</a>
-  <a href="dashboard.html">Dashboard</a>
-  <a href="hall.html">Hall of Responsibility</a>
-  <a href="faq.html">FAQ</a>
-  <a href="reviews.html">Reviews</a>
+  <a href="index.html">Dashboard</a>
+  <a href="hotline.html">Escalation Portal</a>
+  <a href="dashboard.html">System Metrics</a>
+  <a href="hall.html">Compliance History</a>
 </nav>
 
 <div class="container">
 
-<div class="card">
-  <h2>Welcome</h2>
-  <p>
-    A luxury therapeutic environment where all concerns
-    are carefully processed… and ultimately assigned to Jared.
-  </p>
-</div>
+  <div class="grid">
 
-<div class="card">
-  <h2>Fox Detection System</h2>
-  <p id="foxCount">0/12 Foxes Found</p>
-</div>
+    <div class="card">
+      <div class="badge">SYSTEM STATUS</div>
+      <h2>Jared Availability</h2>
+      <div class="metric">0%</div>
+    </div>
 
-<div class="card">
-  <h2>Jared Portrait</h2>
-  <img src="images/jared-fox.jpg" style="width:100%;border-radius:10px;">
-</div>
+    <div class="card">
+      <div class="badge">LIVE OPERATIONS</div>
+      <h2>Active Tickets</h2>
+      <div class="metric" id="counter">312,451</div>
+    </div>
+
+    <div class="card">
+      <div class="badge">STABILITY INDEX</div>
+      <h2>Stress Level</h2>
+      <div class="metric" id="stressText">Loading...</div>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h2>System Activity Feed</h2>
+    <p id="log">Initializing Jarapy Network...</p>
+  </div>
+
+  <div class="card">
+    <button onclick="submitTicket()">Create New Escalation</button>
+  </div>
 
 </div>
 

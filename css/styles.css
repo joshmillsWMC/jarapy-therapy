@@ -1,83 +1,107 @@
 :root{
-  --sage:#556b5d;
-  --cream:#f7f2ea;
-  --gold:#c8a96b;
-  --charcoal:#2f2f2f;
-  --tan:#d9c7a4;
+  --bg:#0f1720;
+  --panel:#16212e;
+  --card:#1e2b3a;
+  --text:#e6edf3;
+  --muted:#9fb0c3;
+  --accent:#4fd1c5;
+  --warning:#ffb020;
+  --danger:#ff5c5c;
 }
 
 body{
   margin:0;
-  font-family:Georgia, serif;
-  background:var(--cream);
-  color:var(--charcoal);
+  font-family:system-ui;
+  background:var(--bg);
+  color:var(--text);
 }
 
 header{
-  background:linear-gradient(135deg,var(--sage),#2f3d35);
-  color:white;
-  padding:60px;
+  background:linear-gradient(135deg,#1b2a3a,#0f1720);
+  padding:40px;
   text-align:center;
+  border-bottom:1px solid #223244;
 }
 
 nav{
-  background:var(--charcoal);
+  display:flex;
+  justify-content:center;
+  gap:20px;
   padding:12px;
-  text-align:center;
+  background:#0c131b;
+  position:sticky;
+  top:0;
 }
 
 nav a{
-  color:white;
-  margin:0 12px;
+  color:var(--muted);
   text-decoration:none;
-  font-weight:bold;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--accent);
 }
 
 .container{
   max-width:1100px;
   margin:auto;
-  padding:40px;
+  padding:30px;
 }
 
 .card{
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
-  margin-bottom:20px;
+  background:var(--card);
+  padding:20px;
+  margin:15px 0;
+  border-radius:14px;
+  border:1px solid #233244;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  border-color:var(--accent);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+
+.badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+  background:#223244;
+  color:var(--muted);
+}
+
+.metric{
+  font-size:28px;
+  font-weight:bold;
+  color:var(--accent);
 }
 
 button{
-  background:var(--gold);
+  background:var(--accent);
   border:none;
-  padding:10px 15px;
+  padding:10px 14px;
+  border-radius:10px;
   cursor:pointer;
-  font-weight:bold;
+  font-weight:600;
 }
 
 button:hover{
-  opacity:0.85;
+  filter:brightness(1.1);
 }
 
 .fox{
   position:fixed;
-  opacity:0.08;
+  opacity:.05;
   font-size:30px;
 }
 
-.f1{top:80px;left:40px;}
-.f2{bottom:120px;right:60px;}
-.f3{top:50%;left:90%;}
-
-.stress{
-  height:20px;
-  background:#ddd;
-  border-radius:20px;
-  overflow:hidden;
-}
-
-#stressFill{
-  height:100%;
-  width:10%;
-  background:green;
-}
+.f1{top:20%;left:5%;}
+.f2{bottom:10%;right:8%;}
